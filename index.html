@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOVE Anime Girls</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Fira+Code:wght@300;400;500;600&family=VT323&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Asciinema Player -->
+    <link rel="stylesheet" type="text/css"
+        href="https://unpkg.com/asciinema-player@3.7.1/dist/bundle/asciinema-player.css" />
+    <style>
+        /* Custom asciinema player styles */
+        .ap-wrapper {
+            background: #0a0a0a !important;
+        }
+
+        asciinema-player {
+            --term-color-background: #0a0a0a;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Animated Background -->
+    <div class="animated-bg">
+        <div class="grid-bg"></div>
+        <div class="glow-orb glow-orb-1"></div>
+        <div class="glow-orb glow-orb-2"></div>
+        <div class="glow-orb glow-orb-3"></div>
+
+        <!-- Floating Blocks like ctx-engineering -->
+        <div class="floating-blocks">
+            <div class="block block-1">&#9608;&#9608;<br>&#9608;&#9608;</div>
+            <div class="block block-2">&#9617;&#9617;&#9617;<br>&#9617;&#9617;&#9617;<br>&#9617;&#9617;&#9617;</div>
+            <div class="block block-3">&#9619;&#9619;<br>&#9619;&#9619;</div>
+            <div class="block block-4">&#9608;<br>&#9608;&#9608;<br>&#9608;</div>
+            <div class="block block-5">&#9617;&#9617;<br>&#9617;&#9617;</div>
+            <div class="block block-6">&#9619;&#9619;&#9619;<br>&#9619;&#9619;&#9619;</div>
+            <div class="block block-7">&#9608;&#9608;&#9608;<br>&#9608;</div>
+            <div class="block block-8">&#9617;<br>&#9617;&#9617;<br>&#9617;</div>
+            <div class="block block-9">&#9619;&#9619;</div>
+            <div class="block block-10">&#9608;&#9608;<br>&#9608;&#9608;<br>&#9608;&#9608;</div>
+        </div>
+    </div>
+
+    <div class="noise"></div>
+
+    <nav class="nav">
+        <div class="nav-inner">
+            <a href="index.html" class="logo">
+                <span class="logo-bracket">&lt;</span>Metsuki$<span class="logo-bracket"> /&gt;</span>
+            </a>
+            <div class="nav-links">
+                <a href="https://github.com/metsuwuki">GitHub</a>
+                <a href="https://discord.gg/ZZyBZytaWT">Discord Server</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <div class="hero-label fade-in">
+                    <span class="label-dot"></span>
+                    Developemen of Programs | Exploits | Bots
+                </div>
+
+                <pre class="ascii-art fade-in stagger-1">
+███╗   ███╗███████╗████████╗███████╗██╗   ██╗██╗  ██╗██╗
+████╗ ████║██╔════╝╚══██╔══╝██╔════╝██║   ██║██║ ██╔╝██║
+██╔████╔██║█████╗     ██║   ███████╗██║   ██║█████╔╝ ██║
+██║╚██╔╝██║██╔══╝     ██║   ╚════██║██║   ██║██╔═██╗ ██║
+██║ ╚═╝ ██║███████╗   ██║   ███████║╚██████╔╝██║  ██╗██║
+╚═╝     ╚═╝╚══════╝   ╚═╝   ╚══════╝ ╚═════╝ ╚═╝  ╚═╝╚═╝
+                </pre>
+
+                <p class="hero-description fade-in stagger-2">
+                    Presents with Discord: -> "LOVE ANIME GIRLS" <span class="typing-cursor"></span>
+                </p>
+
+                <div class="hero-actions fade-in stagger-3"></div>
+            </div>
+        </section>
+
+        <div class="divider"></div>
+
+        <!-- Demo with Asciinema -->
+        <section class="section">
+            <div class="section-header fade-in">
+                <span class="section-number">//</span>
+                <h2>Discord Server</h2>
+            </div>
+            <div class="section-content">
+                <div class="demo-container">
+                    <div class="demo-box scale-in stagger-1">
+                        <div class="demo-header">
+                            <span class="code-dot"></span>
+                            <span class="code-dot"></span>
+                            <span class="code-dot"></span>
+                            <span class="demo-title">Introduction</span>
+                        </div>
+                        <div class="demo-player" id="demo-player-container">
+                            <div id="video-player" style="width: 100%; aspect-ratio: 9/16;">
+                                <video width="100%" height="100%" controls style="width: 100%; height: 100%; object-fit: contain; background: #000;">
+                                    <source src="assets/video/intro.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                        </div>
+                        <p class="demo-caption">Server Introduction</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-header fade-in">
+                <span class="section-number">//</span>
+                <h2>About Us</h2>
+            </div>
+            <div class="section-content">
+                <div class="content-grid">
+                    <div class="content-main fade-in-left">
+                        <p class="large-text">
+                            Gaming, a welcoming community, and
+                            plenty of ways to relax—everything
+                            without the toxicity.
+                        </p>
+                        <p>
+                            We maintain strict rules to keep the vibe positive
+                        </p>
+                    </div>
+                    <div class="content-aside fade-in-right">
+                        <div class="code-block">
+                            <div class="code-header">
+                                <span class="code-dot"></span>
+                                <span class="code-dot"></span>
+                                <span class="code-dot"></span>
+                                <span class="code-title">rules.ts</span>
+                            </div>
+                            <pre class="code-content"><span class="kw">export const</span> <span class="fn">ServerRules</span> = {
+  friendliness: <span class="str">"Be friendly and welcoming"</span>,
+  toxicity: <span class="str">"Avoid toxicity and negativity"</span>,
+  respect: <span class="str">"Respect all members"</span>,
+  conflicts: <span class="str">"Do not start or escalate conflicts"</span>,
+  enjoyment: <span class="str">"Play, chill, and enjoy the atmosphere"</span>
+}
+
+<span class="kw">function</span> <span class="fn">joinServer</span>(member) {
+  <span class="kw">if</span> (!member.follows(ServerRules)) {
+    <span class="kw">throw</span> <span class="kw">new</span> <span class="fn">Error</span>(<span class="str">"Rules violation"</span>)
+  }
+
+  <span class="kw">return</span> <span class="str">"Welcome to the community!"</span>
+}
+</pre>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="divider"></div>
+
+            <section class="section">
+                <div class="section-header fade-in">
+                    <span class="section-number">//</span>
+                    <h2>Features</h2>
+                </div>
+                <div class="section-content">
+                    <div class="capabilities-grid">
+                        <div class="capability scale-in stagger-1">
+                            <div class="capability-icon">
+                                <pre>
+
+    /\_/\
+    ( o.o)
+     > ^ <
+
+</pre>
+                            </div>
+                            <h3>Gaming</h3>
+                            <p>A fully-featured server for playing games with friends, voice rooms, and game channels.</p>
+                        </div>
+                        <div class="capability scale-in stagger-2">
+                            <div class="capability-icon">
+                                <pre>
+
+(\_(\
+( o.o)
+C(")(")
+
+</pre>
+                            </div>
+                            <h3>Community</h3>
+                            <p>A friendly community without toxicity. Chat and find like-minded people.</p>
+                        </div>
+                        <div class="capability scale-in stagger-3">
+                            <div class="capability-icon">
+                                <pre>
+┌─────┐
+│ >>_ │
+│ $:~ │
+│ #── │
+└─────┘</pre>
+                            </div>
+                            <h3>Automation</h3>
+                            <p>Integrated bots for moderation and 24/7 server management.</p>
+                        </div>
+                        <div class="capability scale-in stagger-4">
+                            <div class="capability-icon">
+                                <pre>
+┌─────┐
+│ ◆◆ │
+│ ◆◆ │
+│ ◆◆ │
+└─────┘</pre>
+                            </div>
+                            <h3>Events</h3>
+                            <p>Regular events, contests, and activities for all participants.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="divider"></div>
+
+            <section class="section">
+                <div class="section-header fade-in">
+                    <span class="section-number">//</span>
+                    <h2>Server Guide</h2>
+                </div>
+                <div class="section-content">
+                    <div class="server-guide fade-in">
+                        <div class="guide-section">
+                            <h3 class="guide-title">📒 INFO</h3>
+                            <div class="guide-items">
+                                <div class="guide-item">
+                                    <span class="guide-icon">📒</span>
+                                    <span class="guide-text"><strong>Info</strong> - You are here. All information is here</span>
+                                </div>
+                                <div class="guide-item">
+                                    <span class="guide-icon">❔</span>
+                                    <span class="guide-text"><strong>Ideas</strong> - Share your ideas for server development</span>
+                                </div>
+                                <div class="guide-item">
+                                    <span class="guide-icon">⌨️</span>
+                                    <span class="guide-text"><strong>Bots</strong> - Feedback and bot commands</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="guide-section">
+                            <h3 class="guide-title">🌐 COMMUNITY</h3>
+                            <div class="guide-items">
+                                <div class="guide-item">
+                                    <span class="guide-icon">🌍</span>
+                                    <span class="guide-text"><strong>General</strong> - Chat with everyone</span>
+                                </div>
+                                <div class="guide-item">
+                                    <span class="guide-icon">🔱</span>
+                                    <span class="guide-text"><strong>Auto-Roles</strong> - Choose your roles</span>
+                                </div>
+                                <div class="guide-item">
+                                    <span class="guide-icon">🎦</span>
+                                    <span class="guide-text"><strong>Media</strong> - Best moments and clips</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="guide-section">
+                            <h3 class="guide-title">🎥 CINEMA HALL</h3>
+                            <div class="guide-items">
+                                <div class="guide-item">
+                                    <span class="guide-icon">🍿</span>
+                                    <span class="guide-text"><strong>Offers</strong> - Movie and stream suggestions</span>
+                                </div>
+                                <div class="guide-item">
+                                    <span class="guide-icon">🎫</span>
+                                    <span class="guide-text"><strong>Tickets</strong> - Get access to watch parties</span>
+                                </div>
+                                <div class="guide-item">
+                                    <span class="guide-icon">🎥</span>
+                                    <span class="guide-text"><strong>Cinema</strong> - Watch together with friends</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="guide-section">
+                            <h3 class="guide-title">🎧 VOICE CHANNELS</h3>
+                            <div class="guide-items">
+                                <div class="guide-item">
+                                    <span class="guide-icon">🔇</span>
+                                    <span class="guide-text"><strong>No-Micro</strong> - Listen without microphone</span>
+                                </div>
+                                <div class="guide-item">
+                                    <span class="guide-icon">🎙️</span>
+                                    <span class="guide-text"><strong>General 64kbps</strong> - Standard voice chat</span>
+                                </div>
+                                <div class="guide-item">
+                                    <span class="guide-icon">🎙️</span>
+                                    <span class="guide-text"><strong>General 128kbps</strong> - High quality audio</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="guide-section">
+                            <h3 class="guide-title">😴 AFK & SOCIAL</h3>
+                            <div class="guide-items">
+                                <div class="guide-item">
+                                    <span class="guide-icon">💤</span>
+                                    <span class="guide-text"><strong>AFK</strong> - Away or need some quiet time</span>
+                                </div>
+                                <div class="guide-item">
+                                    <span class="guide-icon">🖤</span>
+                                    <span class="guide-text"><strong>Lonely Isolation</strong> - For chill moments alone</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="guide-section">
+                            <h3 class="guide-title">🚨 PRIVATE CHANNELS</h3>
+                            <div class="guide-items">
+                                <div class="guide-item">
+                                    <span class="guide-icon">📝</span>
+                                    <span class="guide-text"><strong>Edit</strong> - Customize your private channel</span>
+                                </div>
+                                <div class="guide-item">
+                                    <span class="guide-icon">➕</span>
+                                    <span class="guide-text"><strong>Create</strong> - Create your own private channel</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="guide-divider"></div>
+
+                        <div class="guide-tips">
+                            <h3 class="guide-title">👑 ROLES & CUSTOMIZATION</h3>
+                            <div class="customization-box">
+                                <div class="custom-item">
+                                    <span class="custom-icon">🎯</span>
+                                    <p>Choose roles that match your interests</p>
+                                </div>
+                                <div class="custom-item">
+                                    <span class="custom-icon">📱</span>
+                                    <p>Select your device (PC / Mobile / Tablet)</p>
+                                </div>
+                                <div class="custom-item">
+                                    <span class="custom-icon">🎮</span>
+                                    <p>Pick your favorite games for notifications</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="guide-tips">
+                            <h3 class="guide-title">💡 TIPS & TRICKS</h3>
+                            <div class="tips-grid">
+                                <div class="tip-item">
+                                    <span class="tip-number">01</span>
+                                    <p>Use roles to find teammates easily</p>
+                                </div>
+                                <div class="tip-item">
+                                    <span class="tip-number">02</span>
+                                    <p>Use mentions to gather your team</p>
+                                </div>
+                                <div class="tip-item">
+                                    <span class="tip-number">03</span>
+                                    <p>Share clips and great moments</p>
+                                </div>
+                                <div class="tip-item">
+                                    <span class="tip-number">04</span>
+                                    <p>Play and enjoy the atmosphere!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="divider"></div>
+
+            <section class="cta fade-in">
+                <h2>Join Now</h2>
+                <p>Join us now and be part of something amazing!</p>
+                <a href="https://discord.gg/ZZyBZytaWT" class="btn btn-primary" target="_blank">
+                    Join Discord <span class="arrow">→</span>
+                </a>
+            </section>
+
+            <footer class="footer">
+                <div class="footer-inner">
+                    <div class="footer-grid compact"></div>
+                    <div class="footer-bottom small">
+                        <span>© 2025 Metsuki</span>
+                        <span class="sep">·</span>
+                        <span>All rights reserved</span>
+                    </div>
+                </div>
+            </footer>
+    </main>
+
+    <!-- Asciinema Player JS -->
+    <script src="https://unpkg.com/asciinema-player@3.7.1/dist/bundle/asciinema-player.min.js"></script>
+
+    <script>
+        // Initialize Asciinema players
+        document.addEventListener('DOMContentLoaded', function () {
+            AsciinemaPlayer.create(
+                'assets/demo/install.cast',
+                document.getElementById('demo-install'),
+                {
+                    autoPlay: false,
+                    preload: true,
+                    loop: false,
+                    speed: 1,
+                    theme: 'monokai',
+                    fit: 'width',
+                    controls: true
+                }
+            );
+        });
+
+        // Scroll-triggered animations with direction detection
+        const scrollContainer = document.querySelector('main');
+        let lastScrollTop = 0;
+        let scrollDirection = 'down';
+        
+        const observerOptions = {
+            threshold: 0.2,
+            rootMargin: '0px 0px -40px 0px',
+            root: scrollContainer
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    entry.target.classList.remove('leaving');
+                } else if (entry.boundingClientRect.top < 0) {
+                    // Элемент уходит вверх (скроллим вниз)
+                    entry.target.classList.remove('visible');
+                    entry.target.classList.add('leaving');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all animation elements
+        document.querySelectorAll('.fade-in, .fade-in-left, .fade-in-right, .scale-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Detect scroll direction
+        scrollContainer.addEventListener('scroll', () => {
+            const currentScroll = scrollContainer.scrollTop;
+            scrollDirection = currentScroll > lastScrollTop ? 'down' : 'up';
+            lastScrollTop = currentScroll;
+        }, { passive: true });
+
+        // Typewriter: reveal `.code-content` text nodes character-by-character when visible
+        (function() {
+            const codeEls = document.querySelectorAll('.code-content');
+            function prepare(el) {
+                if (el.dataset.tyPrepared) return;
+                el.dataset.tyPrepared = '1';
+                const walker = document.createTreeWalker(el, NodeFilter.SHOW_TEXT, null, false);
+                const nodes = [];
+                let n;
+                while (n = walker.nextNode()) {
+                    // keep all text nodes (including whitespace)
+                    nodes.push(n);
+                }
+
+                nodes.forEach(t => {
+                    const span = document.createElement('span');
+                    span.className = 'ty-text';
+                    span.dataset.full = t.nodeValue;
+                    span.textContent = '';
+                    t.parentNode.replaceChild(span, t);
+                });
+            }
+
+            function play(el, opts={speed:12, variance:6}) {
+                if (el.dataset.tyPlayed) return;
+                el.dataset.tyPlayed = '1';
+                const spans = Array.from(el.querySelectorAll('.ty-text'));
+                const cursor = document.createElement('span');
+                cursor.className = 'code-cursor';
+                el.appendChild(cursor);
+
+                let seg = 0;
+                let charIdx = 0;
+                function step() {
+                    if (seg >= spans.length) {
+                        cursor.remove();
+                        return;
+                    }
+                    const s = spans[seg];
+                    const full = s.dataset.full || '';
+                    if (charIdx < full.length) {
+                        s.textContent += full.charAt(charIdx);
+                        charIdx++;
+                        const delay = opts.speed + Math.round((Math.random() - 0.5) * opts.variance);
+                        setTimeout(step, Math.max(6, delay));
+                    } else {
+                        // move to next span
+                        seg++;
+                        charIdx = 0;
+                        // preserve tiny pause at newlines
+                        setTimeout(step, 30 + Math.random()*80);
+                    }
+                }
+                step();
+            }
+
+            const codeObserver = new IntersectionObserver((entries) => {
+                entries.forEach(e => {
+                    const el = e.target;
+                    if (e.isIntersecting) {
+                        prepare(el);
+                        play(el, {speed:10, variance:8});
+                    }
+                });
+            }, {threshold: 0.3});
+
+            codeEls.forEach(el => {
+                // keep original HTML as backup
+                if (!el.dataset.orig) el.dataset.orig = el.innerHTML;
+                // clear existing content so prepared spans will be inserted
+                // but we first operate directly on the element
+                codeObserver.observe(el);
+            });
+        })();
+
+        // Subtle mousemove tilt for demo boxes and background
+        (function() {
+            const demoBoxes = document.querySelectorAll('.demo-box');
+            let mouseTimeout;
+            document.addEventListener('mousemove', (e) => {
+                const x = (e.clientX / window.innerWidth - 0.5) * 10;
+                const y = (e.clientY / window.innerHeight - 0.5) * 6;
+                demoBoxes.forEach((box, idx) => {
+                    const tx = x * (idx % 2 === 0 ? 1 : -1) * 0.6;
+                    const ty = y * 0.6;
+                    box.style.transform = `perspective(900px) rotateX(${ -ty }deg) rotateY(${ tx }deg) translateZ(0)`;
+                });
+                clearTimeout(mouseTimeout);
+                mouseTimeout = setTimeout(() => {
+                    demoBoxes.forEach(box => box.style.transform = '');
+                }, 1200);
+            });
+
+            const animatedBg = document.querySelector('.animated-bg');
+            document.addEventListener('mousemove', (e) => {
+                if (!animatedBg) return;
+                const nx = (e.clientX / window.innerWidth - 0.5);
+                const ny = (e.clientY / window.innerHeight - 0.5);
+                animatedBg.style.transform = `translate3d(${nx*6}px, ${ny*6}px, 0)`;
+                animatedBg.style.transition = 'transform 0.6s cubic-bezier(0.2,0.8,0.2,1)';
+            });
+            document.addEventListener('mouseleave', () => {
+                if (animatedBg) animatedBg.style.transform = '';
+            });
+        })();
+
+        // Parallax effect on scroll for glow orbs and blocks
+        // Updated to work with custom scroll container
+        const mainElement = document.querySelector('main');
+        let ticking = false;
+        
+        mainElement.addEventListener('scroll', () => {
+            if (!ticking) {
+                window.requestAnimationFrame(() => {
+                    const scrollY = mainElement.scrollTop;
+                    const viewportHeight = mainElement.clientHeight;
+                    
+                    // Parallax for orbs and blocks
+                    document.querySelectorAll('.glow-orb').forEach((orb, i) => {
+                        const speed = 0.05 + (i * 0.02);
+                        orb.style.transform = `translateY(${scrollY * speed}px)`;
+                    });
+                    
+                    document.querySelectorAll('.block').forEach((block, i) => {
+                        const speed = 0.02 + (i * 0.01);
+                        block.style.transform = `translateY(${scrollY * speed}px)`;
+                    });
+
+                    // Enhance fade-in effects based on scroll position for smooth video-like effect
+                    document.querySelectorAll('.fade-in, .fade-in-left, .fade-in-right, .scale-in').forEach(el => {
+                        const rect = el.getBoundingClientRect();
+                        const mainRect = mainElement.getBoundingClientRect();
+                        const elementCenter = rect.top - mainRect.top + rect.height / 2 + mainElement.scrollTop;
+                        const viewportCenter = scrollY + viewportHeight / 2;
+                        
+                        if (rect.top < mainRect.bottom && rect.bottom > mainRect.top && !el.classList.contains('visible')) {
+                            const distanceFromCenter = Math.abs(elementCenter - viewportCenter);
+                            const maxDistance = viewportHeight;
+                            const progress = Math.max(0, 1 - distanceFromCenter / maxDistance);
+                            
+                            if (progress > 0.3) {
+                                el.classList.add('visible');
+                            }
+                        }
+                    });
+                    
+                    ticking = false;
+                });
+                ticking = true;
+            }
+        }, { passive: true });
+    </script>
+</body>
+
+</html>
