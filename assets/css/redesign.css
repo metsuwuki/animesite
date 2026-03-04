@@ -423,15 +423,10 @@ main,
 }
 
 .glass-card {
-    position: relative;
-    overflow: hidden;
-    background:
-        linear-gradient(136deg, rgba(255, 255, 255, 0.11), rgba(255, 255, 255, 0.025) 32%, transparent 68%),
-        var(--panel);
+    background: var(--panel);
     border: 1px solid var(--line);
     border-radius: var(--radius-xl);
-    box-shadow: var(--shadow);
-    backdrop-filter: blur(16px) saturate(1.15);
+    /* убраны box-shadow, backdrop-filter, лишние градиенты и position */
 }
 
 .glass-card::after {
@@ -515,7 +510,7 @@ main,
 
 .metric-card {
     padding: 18px;
-    min-height: 108px;
+    /* убраны hover/active эффекты, только базовая анимация через React */
 }
 
 .metric-card h3 {
@@ -1310,6 +1305,7 @@ main,
 
 .feature-card {
     padding: 22px;
+    /* убраны hover/active эффекты, только базовая анимация через React */
 }
 
 .feature-card h3 {
@@ -1330,6 +1326,7 @@ main,
 
 .guide-card {
     padding: 22px;
+    /* убраны hover/active эффекты, только базовая анимация через React */
 }
 
 .guide-card h3 {

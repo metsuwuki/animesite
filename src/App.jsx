@@ -61,7 +61,7 @@ const buttonMotion = {
 };
 
 function App() {
-    const [brandSrc, setBrandSrc] = useState("/anime.png");
+    const [brandSrc, setBrandSrc] = useState("anime.png");
     const [isScrolled, setIsScrolled] = useState(false);
 
     useEffect(() => {
@@ -218,7 +218,7 @@ function App() {
                             </div>
                             <div className="media-body">
                                 <video width="720" height="1280" controls playsInline preload="metadata">
-                                    <source src="/assets/video/intro.mp4" type="video/mp4" />
+                                    <source src="assets/video/intro.mp4" type="video/mp4" />
                                     Your browser does not support the video tag.
                                 </video>
                             </div>

@@ -376,8 +376,7 @@ main,
     background: var(--panel);
     border: 1px solid var(--line);
     border-radius: var(--radius-xl);
-    box-shadow: var(--shadow);
-    backdrop-filter: blur(14px);
+    /* убраны box-shadow, backdrop-filter и лишние эффекты */
 }
 
 .hero-media {
@@ -443,6 +442,7 @@ main,
 
 .metric-card {
     padding: 20px;
+    /* убраны hover/active эффекты, только базовая анимация через React */
 }
 
 .metric-card h3 {
@@ -532,6 +532,7 @@ main,
 
 .feature-card {
     padding: 22px;
+    /* убраны hover/active эффекты, только базовая анимация через React */
 }
 
 .feature-card h3 {
@@ -552,6 +553,7 @@ main,
 
 .guide-card {
     padding: 22px;
+    /* убраны hover/active эффекты, только базовая анимация через React */
 }
 
 .guide-card h3 {
