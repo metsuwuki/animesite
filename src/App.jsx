@@ -61,7 +61,7 @@ const buttonMotion = {
 };
 
 function App() {
-    const [brandSrc, setBrandSrc] = useState("/anime.png");
+    const [brandSrc, setBrandSrc] = useState(import.meta.env.BASE_URL + "anime.png");
     const [isScrolled, setIsScrolled] = useState(false);
 
     useEffect(() => {
@@ -142,7 +142,7 @@ function App() {
                                 src={brandSrc}
                                 alt="Metsuki brand"
                                 loading="eager"
-                                onError={() => setBrandSrc("/metsuki-brand.svg")}
+                                onError={() => setBrandSrc(import.meta.env.BASE_URL + "metsuki-brand.svg")}
                             />
                         </span>
                         <span className="brand-text">
@@ -220,7 +220,7 @@ function App() {
                             </div>
                             <div className="media-body">
                                 <video width="720" height="1280" controls playsInline preload="metadata">
-                                    <source src="/assets/video/intro.mp4" type="video/mp4" />
+                                <source src={import.meta.env.BASE_URL + "assets/video/intro.mp4"} type="video/mp4" />
                                     Your browser does not support the video tag.
                                 </video>
                             </div>

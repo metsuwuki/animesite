@@ -72,6 +72,7 @@ a {
         radial-gradient(circle at 52% 88%, rgba(255, 151, 224, 0.18), transparent 38%);
     filter: blur(44px);
     animation: appMistPulse 14s ease-in-out infinite;
+    will-change: transform, opacity;
 }
 
 .container {
@@ -86,6 +87,7 @@ a {
     pointer-events: none;
     overflow: hidden;
     transform-origin: center center;
+    will-change: transform;
 }
 
 .orb {
@@ -94,6 +96,7 @@ a {
     filter: blur(90px);
     opacity: 0.58;
     animation: floatOrb 16s ease-in-out infinite;
+    will-change: transform;
 }
 
 .orb-1 {
@@ -130,6 +133,7 @@ a {
     mix-blend-mode: screen;
     opacity: 0.42;
     animation: prismMistWave 24s ease-in-out infinite;
+    will-change: transform;
 }
 
 .prism-mist-1 {
@@ -166,6 +170,7 @@ a {
     filter: blur(1px);
     opacity: 0.55;
     animation: beamPulse 8s ease-in-out infinite;
+    will-change: transform, opacity;
 }
 
 .beam-1 {
@@ -199,6 +204,7 @@ a {
     transform-origin: center top;
     opacity: 0.22;
     animation: gridDrift 28s linear infinite;
+    will-change: transform;
 }
 
 .grain-layer {
@@ -209,6 +215,7 @@ a {
     opacity: 0.05;
     mix-blend-mode: soft-light;
     animation: grainDrift 13s steps(8) infinite;
+    will-change: transform;
 }
 
 .scroll-line {
@@ -1066,6 +1073,7 @@ a {
     pointer-events: none;
     overflow: hidden;
     transform-origin: center center;
+    will-change: transform;
 }
 
 .orb {
@@ -1074,6 +1082,7 @@ a {
     filter: blur(90px);
     opacity: 0.58;
     animation: floatOrb 16s ease-in-out infinite;
+    will-change: transform;
 }
 
 .orb-1 {
@@ -1110,6 +1119,7 @@ a {
     filter: blur(1px);
     opacity: 0.55;
     animation: beamPulse 8s ease-in-out infinite;
+    will-change: transform, opacity;
 }
 
 .beam-1 {
@@ -1142,6 +1152,7 @@ a {
     transform-origin: center top;
     opacity: 0.22;
     animation: gridDrift 28s linear infinite;
+    will-change: transform;
 }
 
 .grain-layer {
@@ -1152,6 +1163,7 @@ a {
     opacity: 0.05;
     mix-blend-mode: soft-light;
     animation: grainDrift 13s steps(8) infinite;
+    will-change: transform;
 }
 
 .scroll-line {
