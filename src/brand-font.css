@@ -59,6 +59,7 @@
             rgba(88, 205, 255, 0.34));
     filter: blur(26px);
     opacity: 0.46;
+    will-change: transform;
     animation: darkPrismCardFlow var(--prism-speed, 16s) linear infinite;
     animation-delay: var(--prism-delay, 0s);
     pointer-events: none;

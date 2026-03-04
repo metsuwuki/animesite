@@ -48,8 +48,8 @@ const guide = [
 ];
 
 const revealUp = {
-    initial: { opacity: 0, y: 84, scale: 0.86, filter: "blur(10px)" },
-    whileInView: { opacity: 1, y: 0, scale: 1, filter: "blur(0px)" },
+    initial: { opacity: 0, y: 56, scale: 0.92 },
+    whileInView: { opacity: 1, y: 0, scale: 1 },
     viewport: { once: true, amount: 0.25 },
     transition: { duration: 1.08, ease: [0.16, 1, 0.3, 1] }
 };
@@ -99,8 +99,6 @@ function App() {
     });
 
     const backgroundY = useTransform(smoothProgress, [0, 1], [0, -360]);
-    const backgroundScale = useTransform(smoothProgress, [0, 1], [1, 1.2]);
-    const backgroundRotate = useTransform(smoothProgress, [0, 1], [0, 8]);
     const heroY = useTransform(smoothProgress, [0, 0.35], [0, -180]);
     const heroScale = useTransform(smoothProgress, [0, 0.36], [1, 0.8]);
     const heroOpacity = useTransform(smoothProgress, [0, 0.36], [1, 0.38]);
@@ -116,7 +114,7 @@ function App() {
 
     return (
         <div className="app-shell" id="top">
-            <motion.div className="bg-stage" style={{ y: backgroundY, scale: backgroundScale, rotate: backgroundRotate }} aria-hidden="true">
+            <motion.div className="bg-stage" style={{ y: backgroundY }} aria-hidden="true">
                 <span className="orb orb-1"></span>
                 <span className="orb orb-2"></span>
                 <span className="orb orb-3"></span>
@@ -234,8 +232,8 @@ function App() {
                         <motion.article
                             className="metric-card glass"
                             key={item.title}
-                            initial={{ opacity: 0, y: 88, scale: 0.84, rotateX: 8, filter: "blur(8px)" }}
-                            whileInView={{ opacity: 1, y: 0, scale: 1, rotateX: 0, filter: "blur(0px)" }}
+                            initial={{ opacity: 0, y: 60, scale: 0.88 }}
+                            whileInView={{ opacity: 1, y: 0, scale: 1 }}
                             whileHover={{ y: -9, scale: 1.024 }}
                             viewport={{ once: true, amount: 0.35 }}
                             transition={{ duration: 0.95, ease: [0.16, 1, 0.3, 1], delay: index * 0.1 }}
@@ -288,8 +286,8 @@ export function joinServer(user) {
                             <motion.article
                                 className="feature-card glass"
                                 key={item.title}
-                                initial={{ opacity: 0, y: 92, scale: 0.84, rotateX: 10, filter: "blur(9px)" }}
-                                whileInView={{ opacity: 1, y: 0, scale: 1, rotateX: 0, filter: "blur(0px)" }}
+                                initial={{ opacity: 0, y: 60, scale: 0.88 }}
+                                whileInView={{ opacity: 1, y: 0, scale: 1 }}
                                 whileHover={{ y: -10, scale: 1.026 }}
                                 viewport={{ once: true, amount: 0.24 }}
                                 transition={{ duration: 0.98, ease: [0.16, 1, 0.3, 1], delay: index * 0.09 }}
@@ -312,8 +310,8 @@ export function joinServer(user) {
                             <motion.article
                                 className="guide-card glass"
                                 key={column.title}
-                                initial={{ opacity: 0, y: 94, scale: 0.84, rotateX: 9, filter: "blur(9px)" }}
-                                whileInView={{ opacity: 1, y: 0, scale: 1, rotateX: 0, filter: "blur(0px)" }}
+                                initial={{ opacity: 0, y: 60, scale: 0.88 }}
+                                whileInView={{ opacity: 1, y: 0, scale: 1 }}
                                 whileHover={{ y: -10, scale: 1.026 }}
                                 viewport={{ once: true, amount: 0.24 }}
                                 transition={{ duration: 0.99, ease: [0.16, 1, 0.3, 1], delay: index * 0.09 }}
