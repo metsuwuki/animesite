@@ -1,0 +1,333 @@
+@font-face {
+    font-family: "MadeCarvingSoft";
+    src: url("/fonts/made-carving-soft-outline-8.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --display-font: "MadeCarvingSoft", "Manrope", "Segoe UI", sans-serif;
+}
+
+.brand-text strong,
+.hero h1,
+.section-title h2,
+.cta-card h2 {
+    font-family: var(--display-font) !important;
+    font-weight: 400;
+    letter-spacing: 0.022em;
+    text-shadow: 0 0 22px rgba(130, 153, 255, 0.22);
+}
+
+.nav-links a,
+.section-kicker,
+.btn-terr span {
+    font-family: var(--display-font) !important;
+    font-weight: 400;
+    letter-spacing: 0.028em;
+}
+
+.glass,
+.metric-card,
+.feature-card,
+.guide-card,
+.rules-card,
+.cta-card {
+    position: relative;
+    overflow: hidden;
+    border-color: rgba(139, 164, 255, 0.4) !important;
+    background:
+        linear-gradient(145deg, rgba(9, 14, 35, 0.94), rgba(10, 18, 44, 0.88) 52%, rgba(13, 20, 52, 0.9) 100%) !important;
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.1),
+        inset 0 -24px 60px rgba(65, 46, 148, 0.28),
+        0 20px 44px rgba(3, 7, 22, 0.62) !important;
+}
+
+.glass::before,
+.cta-card::before {
+    content: "";
+    position: absolute;
+    inset: -42%;
+    border-radius: inherit;
+    background:
+        conic-gradient(from 150deg,
+            rgba(88, 205, 255, 0.34),
+            rgba(118, 96, 255, 0.45),
+            rgba(255, 131, 218, 0.34),
+            rgba(88, 205, 255, 0.34));
+    filter: blur(26px);
+    opacity: 0.46;
+    animation: darkPrismCardFlow var(--prism-speed, 16s) linear infinite;
+    animation-delay: var(--prism-delay, 0s);
+    pointer-events: none;
+    z-index: 0;
+}
+
+.glass::after,
+.cta-card::after {
+    content: "";
+    position: absolute;
+    inset: -24% -42%;
+    border-radius: inherit;
+    background: linear-gradient(112deg,
+            transparent 32%,
+            rgba(169, 214, 255, 0.16) 46%,
+            rgba(255, 162, 231, 0.22) 52%,
+            rgba(116, 226, 255, 0.16) 58%,
+            transparent 72%);
+    transform: translate3d(-36%, 0, 0) rotate(8deg);
+    opacity: 0;
+    animation: darkPrismSheen var(--sheen-speed, 11s) ease-in-out infinite;
+    animation-delay: var(--sheen-delay, 0s);
+    pointer-events: none;
+    z-index: 0;
+}
+
+.metric-grid .metric-card:nth-child(1) {
+    --prism-speed: 13.8s;
+    --prism-delay: -1.7s;
+    --sheen-speed: 9.6s;
+    --sheen-delay: -2.8s;
+}
+
+.metric-grid .metric-card:nth-child(2) {
+    --prism-speed: 17.2s;
+    --prism-delay: -6.1s;
+    --sheen-speed: 12.8s;
+    --sheen-delay: -5.2s;
+}
+
+.metric-grid .metric-card:nth-child(3) {
+    --prism-speed: 15.4s;
+    --prism-delay: -3.5s;
+    --sheen-speed: 10.2s;
+    --sheen-delay: -1.4s;
+}
+
+.metric-grid .metric-card:nth-child(4) {
+    --prism-speed: 18.7s;
+    --prism-delay: -8.3s;
+    --sheen-speed: 13.4s;
+    --sheen-delay: -7.1s;
+}
+
+.feature-grid .feature-card:nth-child(1) {
+    --prism-speed: 16.3s;
+    --prism-delay: -4.2s;
+    --sheen-speed: 11.1s;
+    --sheen-delay: -2.4s;
+}
+
+.feature-grid .feature-card:nth-child(2) {
+    --prism-speed: 14.6s;
+    --prism-delay: -1.9s;
+    --sheen-speed: 10.5s;
+    --sheen-delay: -6.5s;
+}
+
+.feature-grid .feature-card:nth-child(3) {
+    --prism-speed: 19.4s;
+    --prism-delay: -7.6s;
+    --sheen-speed: 12.7s;
+    --sheen-delay: -4.6s;
+}
+
+.feature-grid .feature-card:nth-child(4) {
+    --prism-speed: 15.1s;
+    --prism-delay: -3.1s;
+    --sheen-speed: 9.8s;
+    --sheen-delay: -0.9s;
+}
+
+.guide-grid .guide-card:nth-child(1) {
+    --prism-speed: 20.2s;
+    --prism-delay: -10.4s;
+    --sheen-speed: 13.9s;
+    --sheen-delay: -4.1s;
+}
+
+.guide-grid .guide-card:nth-child(2) {
+    --prism-speed: 16.8s;
+    --prism-delay: -6.7s;
+    --sheen-speed: 10.8s;
+    --sheen-delay: -3.3s;
+}
+
+.guide-grid .guide-card:nth-child(3) {
+    --prism-speed: 14.2s;
+    --prism-delay: -2.2s;
+    --sheen-speed: 9.3s;
+    --sheen-delay: -5.8s;
+}
+
+.guide-grid .guide-card:nth-child(4) {
+    --prism-speed: 18.1s;
+    --prism-delay: -8.8s;
+    --sheen-speed: 12.2s;
+    --sheen-delay: -1.9s;
+}
+
+.rules-card {
+    --prism-speed: 17.6s;
+    --prism-delay: -4.9s;
+    --sheen-speed: 11.6s;
+    --sheen-delay: -2.7s;
+}
+
+.hero-media {
+    --prism-speed: 21.4s;
+    --prism-delay: -9.2s;
+    --sheen-speed: 14.2s;
+    --sheen-delay: -6.2s;
+}
+
+.cta-card {
+    --prism-speed: 14.9s;
+    --prism-delay: -3.8s;
+    --sheen-speed: 9.4s;
+    --sheen-delay: -1.1s;
+}
+
+.btn-terr {
+    background-size: 280% 280% !important;
+    animation: terrButtonFlow 4.8s ease-in-out infinite !important;
+}
+
+.btn-terr::before {
+    opacity: 0.62;
+    animation: terrButtonAura 6.8s linear infinite;
+}
+
+.btn-terr::after {
+    inset: -28% -52%;
+    border-radius: inherit;
+    background: linear-gradient(112deg,
+            transparent 24%,
+            rgba(255, 255, 255, 0.74) 46%,
+            rgba(171, 243, 255, 0.58) 52%,
+            transparent 74%);
+    mix-blend-mode: screen;
+    opacity: 0;
+    transform: translate3d(-58%, 0, 0) rotate(7deg);
+    animation: terrButtonGlint 3.4s cubic-bezier(0.2, 0.9, 0.2, 1) infinite;
+}
+
+.btn-terr:hover {
+    animation-duration: 2.6s !important;
+    filter: brightness(1.12) saturate(1.18);
+}
+
+.glass > *,
+.cta-card > * {
+    position: relative;
+    z-index: 1;
+}
+
+.metric-card h3,
+.feature-card h3,
+.guide-card h3,
+.rules-head p,
+.cta-card h2 {
+    color: #eef2ff;
+}
+
+.metric-card:hover,
+.feature-card:hover,
+.guide-card:hover,
+.rules-card:hover,
+.hero-media:hover,
+.cta-card:hover {
+    border-color: rgba(179, 206, 255, 0.68) !important;
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.14),
+        inset 0 -28px 70px rgba(78, 56, 174, 0.33),
+        0 30px 62px rgba(4, 8, 25, 0.76) !important;
+}
+
+@keyframes darkPrismCardFlow {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+
+    100% {
+        transform: rotate(360deg) scale(1.08);
+    }
+}
+
+@keyframes darkPrismSheen {
+    0%,
+    24% {
+        opacity: 0;
+        transform: translate3d(-58%, 0, 0) rotate(7deg);
+    }
+
+    33% {
+        opacity: 0.62;
+    }
+
+    50% {
+        opacity: 0;
+        transform: translate3d(58%, 0, 0) rotate(7deg);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate3d(58%, 0, 0) rotate(7deg);
+    }
+}
+
+@keyframes terrButtonFlow {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes terrButtonAura {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+
+    100% {
+        transform: rotate(360deg) scale(1.08);
+    }
+}
+
+@keyframes terrButtonGlint {
+    0%,
+    38% {
+        opacity: 0;
+        transform: translate3d(-62%, 0, 0) rotate(7deg);
+    }
+
+    47% {
+        opacity: 0.88;
+    }
+
+    58% {
+        opacity: 0;
+        transform: translate3d(62%, 0, 0) rotate(7deg);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate3d(62%, 0, 0) rotate(7deg);
+    }
+}
+
+@media (max-width: 760px) {
+    .hero h1,
+    .section-title h2,
+    .cta-card h2 {
+        letter-spacing: 0.01em;
+    }
+}
